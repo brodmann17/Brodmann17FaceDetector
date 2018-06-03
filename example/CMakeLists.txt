@@ -27,6 +27,9 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # add libraries 
 
 find_library(BRODMANN17_LIB brodmann17 HINTS ../lib/${ARCHITECTURE})
+if ( NOT BRODMANN17_LIB )
+	message(FATAL_ERROR "Architecture ${ARCHITECTURE} is not supported!")
+endif()
 target_link_libraries (${PROJECT_NAME} LINK_PUBLIC ${BRODMANN17_LIB})
 
 target_link_libraries (${PROJECT_NAME} LINK_PUBLIC openblas)

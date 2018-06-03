@@ -25,6 +25,7 @@ efficiently on **ARM** CPUs.
 #### Supported Architectures
 
  - Armv8a (aarch64) : linux, tested on Ubuntu 16.04
+ - Armv7l (arm) : linux, tested on Fedora 22
  - Intel (x84_64) : linux, tested on Ubuntu 16.04
  
 #### Speed Benchmark (1 x ARM cortex A72, Rockchip RK3399)
